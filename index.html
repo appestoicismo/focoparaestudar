@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Áudio de Hipnose — Foco & Concentração | R$ 19,90</title>
+  <meta name="description" content="Áudio de 10–15 minutos para entrar em estado de fluxo e bloquear distrações antes de estudar ou trabalhar. Acesso imediato por R$ 19,90." />
+
+  <!-- Pixel da Sora (Facebook Pixel ID 666727852401320) -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(
+    window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '666727852401320'); fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=666727852401320&ev=PageView&noscript=1"/></noscript>
+
+  <!-- CSS inline (mobile-first). Paleta:
+       --azul: confiança/calma (base)  — fontes: Verywell/ColorPsych
+       --verde: equilíbrio/relax       — fontes: Verywell/PMC review
+       --laranja: energia/ação (CTA)   — fontes: CXL/HubSpot
+       --vermelho: atenção/urgência (micro) -->
+  <style>
+    :root{
+      --azul-700:#1e40af; /* azul confiável */
+      --azul-900:#0b173d;
+      --azul-100:#e2e8f0;
+      --verde-600:#16a34a; /* equilíbrio/ok */
+      --verde-50:#ecfdf5;
+      --laranja-600:#ea580c; /* CTA principal */
+      --laranja-700:#c2410c;
+      --vermelho-600:#dc2626; /* micro-urgência */
+      --cinza-900:#111827;
+      --cinza-700:#374151;
+      --cinza-500:#6b7280;
+      --cinza-100:#f3f4f6;
+      --bg:#ffffff;
+      --radius:16px;
+      --shadow:0 10px 25px rgba(2,6,23,.12);
+      --shadow-soft:0 6px 16px rgba(2,6,23,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--cinza-900); background:var(--bg); line-height:1.55;
+    }
+    img{max-width:100%; height:auto; border-radius:12px}
+    .wrap{max-width:1120px; margin:0 auto; padding:20px}
+    .grid{display:grid; gap:20px}
+    .hero{
+      background: linear-gradient(180deg, #eef2ff 0%, #ffffff 60%);
+      padding:28px 20px 36px; border-bottom:1px solid var(--cinza-100);
+    }
+    .hero .card{
+      background:#fff; border-radius:var(--radius); padding:20px; box-shadow:var(--shadow);
+      display:grid; gap:16px;
+    }
+    h1{font-size:28px; line-height:1.2; margin:0; color:var(--azul-700)}
+    .subtitle{color:var(--cinza-700); font-size:16px}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px; padding:6px 12px;
+      background:var(--verde-50); color:var(--verde-600); border-radius:999px; font-weight:600; font-size:12px;
+    }
+    .cta{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:14px 22px; background:var(--laranja-600); color:#fff; border:none;
+      border-radius:12px; font-weight:700; font-size:16px; text-decoration:none; box-shadow:var(--shadow);
+      transition:.2s transform, .2s background;
+    }
+    .cta:hover{background:var(--laranja-700); transform:translateY(-1px)}
+    .cta:active{transform:translateY(0)}
+    .badge-urgencia{color:#fff; background:var(--vermelho-600); padding:4px 10px; border-radius:999px; font-size:12px; font-weight:700}
+
+    section{padding:38px 0}
+    .sec-title{font-size:22px; color:var(--azul-700); margin:0 0 14px}
+    .card{background:#fff; border-radius:var(--radius); padding:18px; box-shadow:var(--shadow-soft)}
+    .benefits li{margin:8px 0}
+    .kpis{display:grid; gap:12px; grid-template-columns:repeat(2,1fr)}
+    .kpi{background:#fff; border-radius:12px; padding:12px; border:1px solid var(--cinza-100); text-align:center}
+    .kpi strong{font-size:18px; color:var(--azul-700)}
+
+    .oferta{background:linear-gradient(180deg, #ffffff 0, #f8fafc 100%)}
+    .price{
+      font-size:34px; color:var(--azul-900); font-weight:800; letter-spacing:-0.5px;
+    }
+    .faq details{border:1px solid var(--cinza-100); border-radius:12px; padding:14px 14px; background:#fff}
+    .faq details+details{margin-top:10px}
+    .faq summary{cursor:pointer; font-weight:700; color:var(--cinza-900)}
+    .faq p{margin:10px 0 0; color:var(--cinza-700)}
+    .rodape{font-size:13px; color:var(--cinza-500)}
+    .comparativo{border:1px dashed var(--cinza-100); border-radius:12px; padding:12px}
+
+    /* Layouts */
+    @media (min-width: 920px){
+      .hero .card{grid-template-columns: 1.2fr 1fr; align-items:center; padding:30px}
+      h1{font-size:40px}
+      .subtitle{font-size:18px}
+      .grid-2{grid-template-columns: repeat(2,1fr)}
+      .grid-3{grid-template-columns: repeat(3,1fr)}
+      section{padding:56px 0}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bloco 1: Venda Imediata -->
+  <header class="hero" role="banner">
+    <div class="wrap">
+      <div class="card">
+        <div>
+          <span class="pill" aria-label="Acesso imediato">Acesso imediato</span>
+          <h1>Entre em <strong>estado de foco total</strong> e aumente sua produtividade em minutos</h1>
+          <p class="subtitle">Áudio de hipnose (10–15 min) para ouvir antes de estudar ou trabalhar. Reduza distrações, vença a procrastinação e comece concentrado.</p>
+          <div class="grid kpis" aria-hidden="true">
+            <div class="kpi"><strong>10–15 min</strong><div>sessão guiada</div></div>
+            <div class="kpi"><strong>Foco</strong><div>clareza mental</div></div>
+          </div>
+          <p><a class="cta" href="#oferta" onclick="try{fbq('track','AddToCart');}catch(e){}">Quero Aumentar Meu Foco Agora</a></p>
+          <small class="badge-urgencia">Liberado na hora</small>
+        </div>
+        <figure>
+          <img src="https://appestoicismo.github.io/insonia/dormindo3.jpg" alt="Mockup do áudio de hipnose tocando no celular" loading="eager" />
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- Bloco 2: Demonstrativo Visual -->
+    <section aria-labelledby="demo">
+      <div class="wrap grid grid-2">
+        <div class="card">
+          <h2 id="demo" class="sec-title">Veja o que você vai receber</h2>
+          <p>Um áudio exclusivo para <strong>entrar em estado de fluxo</strong> e <strong>bloquear distrações</strong> antes de começar seus estudos ou trabalho.</p>
+          <img src="https://appestoicismo.github.io/insonia/dormindo3.jpg" alt="Prévia do material de áudio guiado" loading="lazy" />
+        </div>
+        <div class="card comparativo">
+          <h3 style="margin:0 0 8px; color:var(--cinza-900)">Antes × Depois</h3>
+          <ul style="margin:0; padding-left:18px; color:var(--cinza-700)">
+            <li><strong>Antes:</strong> celular a cada 5 min, abas demais, baixa produtividade.</li>
+            <li><strong>Depois:</strong> foco estável, uma tarefa por vez, sensação de fluxo.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco 3: Benefícios -->
+    <section aria-labelledby="beneficios">
+      <div class="wrap">
+        <div class="card">
+          <h2 id="beneficios" class="sec-title">Benefícios práticos</h2>
+          <ul class="benefits" style="margin:0; padding-left:18px">
+            <li>⚡ Aumente sua produtividade em minutos</li>
+            <li>📚 Estude com mais foco e menos distrações</li>
+            <li>💻 Trabalhe sem pular de tarefa em tarefa</li>
+            <li>🧘‍♂️ Entre em estado de fluxo e clareza mental</li>
+            <li>✅ Diminua a procrastinação e conclua mais tarefas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco 4: Urgência + CTA -->
+    <section aria-labelledby="urgencia">
+      <div class="wrap grid grid-2">
+        <div class="card">
+          <h2 id="urgencia" class="sec-title">Comece ainda hoje — acesso imediato após a compra</h2>
+          <p><a class="cta" href="#oferta" onclick="try{fbq('track','InitiateCheckout');}catch(e){}">Quero Garantir Meu Áudio Agora</a></p>
+        </div>
+        <div class="card" style="display:flex;align-items:center;justify-content:center">
+          <img src="https://appestoicismo.github.io/insonia/dormindo3.jpg" alt="Audição guiada para foco" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco 5: Ideal para você que deseja -->
+    <section aria-labelledby="ideal">
+      <div class="wrap grid grid-3">
+        <div class="card">
+          <h3 id="ideal" class="sec-title" style="margin-bottom:6px">Ideal para você que deseja…</h3>
+          <p class="subtitle" style="margin-top:-6px">Identifique-se com os cenários abaixo:</p>
+        </div>
+        <div class="card">
+          <strong>📖 Manter concentração nos estudos</strong>
+          <p class="subtitle">Sem se distrair com celular ou redes sociais.</p>
+        </div>
+        <div class="card">
+          <strong>💼 Render mais no trabalho</strong>
+          <p class="subtitle">Foco em uma tarefa por vez, sem sobrecarga.</p>
+        </div>
+        <div class="card">
+          <strong>🕒 Aproveitar melhor o tempo</strong>
+          <p class="subtitle">Produza mais em menos horas, com consistência.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco 6: Como funciona -->
+    <section aria-labelledby="processo">
+      <div class="wrap grid grid-3">
+        <div class="card">
+          <h2 id="processo" class="sec-title">Como funciona</h2>
+          <ol style="margin:0; padding-left:18px; color:var(--cinza-700)">
+            <li>Conclua a compra em menos de 2 minutos.</li>
+            <li>Receba acesso imediato por e-mail.</li>
+            <li>Ouça antes de estudar ou trabalhar (10–15 min).</li>
+            <li>Entre em foco profundo e execute com clareza.</li>
+          </ol>
+        </div>
+        <div class="card"><img src="https://appestoicismo.github.io/insonia/dormindo3.jpg" alt="Passo a passo simples" loading="lazy" /></div>
+        <div class="card" style="display:flex;align-items:center;justify-content:center">
+          <a class="cta" href="#oferta">Quero Entrar em Foco</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco 7: Ofertas e Valores (única opção) -->
+    <section id="oferta" class="oferta" aria-labelledby="ofertas">
+      <div class="wrap">
+        <div class="card grid grid-2" style="align-items:center">
+          <div>
+            <h2 id="ofertas" class="sec-title">Apenas <span class="price">R$ 19,90</span> para desbloquear seu foco</h2>
+            <p class="subtitle">Compra única. Acesso imediato. Ouça sempre que precisar.</p>
+            <ul style="margin:0; padding-left:18px; color:var(--cinza-700)">
+              <li>Áudio de hipnose guiada (10–15 min)</li>
+              <li>Uso ilimitado em qualquer dispositivo</li>
+              <li>Atualizações futuras incluídas</li>
+            </ul>
+            <p style="margin:16px 0 0">
+              <a class="cta" href="https://checkout.kwify.com/produto-id" target="_blank" rel="noopener" aria-label="Ir para o checkout Kwify por R$ 19,90" onclick="try{fbq('track','Purchase',{value:19.90,currency:'BRL'});}catch(e){}">
+                Quero Garantir Meu Acesso Agora — R$ 19,90
+              </a>
+            </p>
+            <p style="margin-top:10px"><small class="badge-urgencia">Preço promocional por tempo limitado</small></p>
+          </div>
+          <figure>
+            <img src="https://appestoicismo.github.io/insonia/dormindo3.jpg" alt="Mockup do produto por R$ 19,90" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco 8: FAQ -->
+    <section aria-labelledby="faq">
+      <div class="wrap faq grid grid-2">
+        <div class="card">
+          <h2 id="faq" class="sec-title">Perguntas frequentes</h2>
+          <details><summary>Como recebo o áudio?</summary><p>Logo após a compra, você recebe o acesso imediato por e-mail.</p></details>
+          <details><summary>Funciona em qualquer dispositivo?</summary><p>Sim. Você pode ouvir no celular, tablet ou computador com player de áudio.</p></details>
+          <details><summary>Preciso ter experiência com hipnose?</summary><p>Não. O áudio é 100% guiado e pensado para iniciantes.</p></details>
+          <details><summary>Em quanto tempo noto efeito?</summary><p>Geralmente já na primeira sessão você percebe mais foco e clareza.</p></details>
+        </div>
+
+        <!-- Bloco Opcional: Autoridade (equipe multidisciplinar) -->
+        <div class="card">
+          <h2 class="sec-title">Equipe multidisciplinar</h2>
+          <p>Conte com a experiência de uma <strong>equipe de terapeutas</strong> com formação em hipnose, psicologia e neurociência, aplicando técnicas baseadas em evidências para foco e produtividade.</p>
+          <img src="https://appestoicismo.github.io/insonia/dormindo3.jpg" alt="Equipe multidisciplinar de terapeutas" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloco 10: CTA Final -->
+    <section aria-labelledby="cta-final">
+      <div class="wrap">
+        <div class="card" style="text-align:center">
+          <h2 id="cta-final" class="sec-title" style="margin-bottom:8px">Pare de procrastinar e comece a focar de verdade agora mesmo</h2>
+          <p><a class="cta" href="https://checkout.kwify.com/produto-id" target="_blank" rel="noopener" onclick="try{fbq('track','Purchase',{value:19.90,currency:'BRL'});}catch(e){}">Quero Garantir Meu Áudio — R$ 19,90</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bloco 9: Rodapé Profissional -->
+  <footer role="contentinfo" style="background:#0b1220; color:#d1d5db; padding:26px 0">
+    <div class="wrap rodape">
+      <div class="grid grid-3">
+        <div>
+          <strong style="color:#fff">Suporte</strong><br/>
+          contato@appestoicismo.com.br<br/>
+          WhatsApp: (19)974010028
+        </div>
+        <div>
+          <strong style="color:#fff">Responsável</strong><br/>
+          Hipnoterapeuta Alex Dantas<br/>
+          CNPJ: 40.678.175/0001-77
+        </div>
+        <div>
+          <strong style="color:#fff">Aplicativo</strong><br/>
+          AutoHipnose<br/>
+          <small>Pagamento seguro via Kwify</small>
+        </div>
+      </div>
+      <p style="margin-top:18px; font-size:12px; color:#9ca3af">
+        © <span id="ano"></span> Todos os direitos reservados. Termos de Uso • Política de Privacidade
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
